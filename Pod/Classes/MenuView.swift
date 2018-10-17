@@ -67,7 +67,7 @@ open class MenuView: UIScrollView {
             screenWidth = width
         } else {
             screenWidth = UIScreen.main.bounds.width
-        }
+        } 
         return menuItemViews[currentPage].frame.midX - screenWidth / 2
     }
     fileprivate var contentOffsetXForCurrentPage: CGFloat {
@@ -178,7 +178,7 @@ open class MenuView: UIScrollView {
         isScrollEnabled = menuViewScrollEnabled
         isDirectionalLockEnabled = true
         decelerationRate = menuOptions.deceleratingRate
-        scrollsToTop = false
+        scrollsToTop = false 
         translatesAutoresizingMaskIntoConstraints = false
     }
     
